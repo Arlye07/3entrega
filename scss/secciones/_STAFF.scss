@@ -1,0 +1,54 @@
+//header
+header{
+    a{
+        &:hover{
+            color:rgb(225, 134, 248);
+    font-weight: bold;
+        }
+    }
+    .header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin: 5px;
+    flex-direction: row;
+}     
+    .header a:hover, footer a:hover{
+    color:rgb(225, 134, 248);
+    font-weight: bold;
+
+}}
+//nav
+
+
+//body
+//titulo sticky 
+.strong{
+    .barra{top: 0%;
+        position: sticky;
+        z-index: 2;
+    }
+        .barranav{top: 0px;
+        position: sticky;
+        z-index: 3;
+        border: 2px solid;
+        border-color: rgb(58, 2, 55);
+        background-color: rgba(128, 128, 128, 0.397);
+        font-family: $LetraPrincipal;
+        font-weight: 1000;
+        font-size: 28px;
+    }
+    .a{
+        text-decoration: none;
+        color: rgb(58, 2, 55);
+    }
+    p{ .nos{ display: flex;
+        text-align: center;
+        justify-content: center;}
+
+        .a{ text-decoration: none;
+            color: rgb(58, 2, 55);
+}  
+}
+}

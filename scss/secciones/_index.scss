@@ -1,0 +1,16 @@
+a{
+    .centrado{
+       display: flex;
+       justify-content: center;
+       border: solid;
+       border-radius: 9px;
+       background-image: url(https://th.bing.com/th/id/R.9743e74f858ff8859e46109c10f1e443?rik=srSyp6s9DaakEg&riu=http%3a%2f%2falfonsomartinjimenez.blogs.uva.es%2ffiles%2f2018%2f10%2ftexcal-liso_gris-t15.jpg&ehk=wDKAfnB%2fmyhK%2bNnfr6jRONFTMIXtd5y3H5TA6rgaQI4%3d&risl=&pid=ImgRaw&r=0);
+       
+   }
+ 
+      .barra{top: 0%;
+       position: sticky;
+       z-index: 2;
+    }
+    
+    }
