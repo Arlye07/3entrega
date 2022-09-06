@@ -19,7 +19,33 @@ header{
     font-weight: bold;
 
 }}
-//nav
+//barra nav tit a NOSOTROS
+body{
+
+
+div{ 
+.barranav{top: 0px;
+    position: sticky;
+    z-index: 3;
+    border: 2px solid;
+    border-color: rgb(58, 2, 55);
+    background-color: rgba(128, 128, 128, 0.397);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 28px;
+}
+.a{
+    text-decoration: none;
+    color: rgb(58, 2, 55);
+}
+.nos{ display: flex;
+    text-align: center;
+    justify-content: center;
+} }
+p{
+    line-height: 1.8;;
+    width: justify;
+}}
 
 
 //body
@@ -52,3 +78,16 @@ header{
 }  
 }
 }
+div{
+    .fondoDos{
+        background-color: rgba(219, 157, 214, 0.623);
+    }
+    .negrita{
+        font-weight: 700;
+                }
+                .italica{
+                    font-style: italic;
+                }            
+}
+
+

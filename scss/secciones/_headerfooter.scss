@@ -1,4 +1,8 @@
-.header{
+//header
+header{
+    &:hover{ color:rgb(225, 134, 248);
+        font-weight: bold;}
+        
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -67,7 +71,9 @@
     font-size: 28px;
 }
 //footer
-.footer{
+footer{
+    &:hover{ color:rgb(225, 134, 248);
+        font-weight: bold;}
     .negrita{
         font-weight: 700;
                 }
@@ -80,5 +86,11 @@
                     line-height: 1.3;
                     
                 }
-                
+   .h5{
+    .negritaV{
+        color: purple;
+    }         
+   }    .negrita{
+    font-weight: 700;
+            }           
 }
