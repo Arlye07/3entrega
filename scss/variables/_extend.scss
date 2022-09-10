@@ -18,7 +18,7 @@
       font-size: 22px;
 }
 
-//MIXIN @mixin fontStyle{( rgb(13,56,185))}
+//MIXIN 
 @mixin fontStyle( $colorPrincipal)
 {
   background-color: $colorPrincipal;
