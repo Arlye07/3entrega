@@ -49,7 +49,7 @@ p{
 
 
 //body
-//titulo sticky 
+//titulo
 .strong{
     .barra{top: 0%;
         position: sticky;
@@ -91,3 +91,7 @@ div{
 }
 
 
+div{ 
+.voltear{
+    flex-direction: row-reverse;
+}}
