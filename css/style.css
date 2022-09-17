@@ -183,6 +183,11 @@ h3 {
   overflow: center;
   text-align: center; }
 
+  .borderC{
+    border: 9%;
+    border-radius: 2px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/579/large_2x/abstract-pink-design-geometric-diagonal-background-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg);
+}
 #primeraParte {
   background-image: url(https://pm1.narvii.com/6989/08eadd1…r1-720-1280v2_hq.jpg);
   background-image: url(https://i.pinimg.com/originals/77/56/f3/7756f3bcd7659f955f8bf1027a96b21a.jpg);
@@ -487,6 +492,9 @@ h1 {
   position: fixed;
   top: 420px;
   left: 1080px; }
+  .cardss{
+    justify-content: space-around;
+  }
 
 .wap {
   display: inline-block;

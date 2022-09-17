@@ -22,6 +22,8 @@ a{
 }
 main{
    background-color:rgba(161, 108, 172, 0.507);
+      &:hover{ color:rgb(225, 134, 248);
+          font-weight: bold;}
 }
 footer{
    color: rgb(83, 2, 83);
@@ -44,7 +46,6 @@ h1{
    margin-right: 8px;
    margin-left: 8px;
    padding-top: 25px;
-   position: sticky;
    z-index: 2;
    width: justify;
    height: 100px;
@@ -328,3 +329,13 @@ section{
 .negrita{
    font-weight: 700;
            }
+
+.cardss{
+            justify-content: space-around;
+           }
+
+           .borderC{
+            border: 9%;
+            border-radius: 2px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/579/large_2x/abstract-pink-design-geometric-diagonal-background-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg);
+        }

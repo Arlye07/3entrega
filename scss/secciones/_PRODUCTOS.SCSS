@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 //CUADRO
 div{ 
 .cua {
@@ -51,4 +56,10 @@ b{ font-size: 32px;
     margin-left: 3px;
     margin-right: 3px;
     line-height: 1.5;
+}
+.cardss{
+    justify-content: space-around;
+}
+.leCars{
+    font-size: 12px;
 }
