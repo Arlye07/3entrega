@@ -67,7 +67,7 @@ b{ font-size: 32px;
 &:hover{
     color: purple;
 }
-.fon{background-color: violet;}
-.fon:hover{
+.fon{background-color: violet;
+&:hover{
     background-color: rgb(151, 151, 151);
-  }
+  }}
