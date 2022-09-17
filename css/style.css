@@ -182,7 +182,17 @@ h3 {
   height: 32px;
   overflow: center;
   text-align: center; }
-
+  .cam{
+    color: black;
+  
+  }
+.cam:hover{
+  color: #3e0077;
+}
+.fon{background-color: violet;}
+.fon:hover{
+  background-color: rgb(151, 151, 151);
+}
   .borderC{
     border: 9%;
     border-radius: 2px;
