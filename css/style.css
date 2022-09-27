@@ -238,7 +238,8 @@ h3 {
 
 .italica {
   font-style: italic; }
-
+.wit{width: 330px;
+text-align: center;}
 header {
   display: flex;
   justify-content: space-around;
