@@ -612,10 +612,11 @@ formulario.addEventListener('submit',(e)=>{
   let formu = e.target
   console.log("formulario enviado");
   console.log(formu);
-  console.log(formu.children[0].value)
-  console.log(formu.children[1].value)
   console.log(formu.children[2].value)
-  console.log(formu.children[3].value)
+  console.log(formu.children[6].value)
+  console.log(formu.children[9].value)
+  console.log(formu.children[12].value)
+
 })
 const almacenados = [];
 const formularios = document.querySelector("form"),
