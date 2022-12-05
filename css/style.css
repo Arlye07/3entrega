@@ -633,7 +633,13 @@ body p {
 .strong p .a {
   text-decoration: none;
   color: #3a0237; }
-
+.producto{
+  max-width: 20%;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 3px 3 px rgba(250, 71, 241, 0.329);
+}
 div .fondoDos {
   background-color: rgba(219, 157, 214, 0.623); }
 

@@ -972,16 +972,16 @@ container.innerHTML +=  card;
 //  })
 
 
-
+////////////////////
 
 // Agarro de mi html (DOM) el div de productos por su id (que esta vacio inicialmente)
 const divProductos = document.getElementById('productos');
 
-// Inicializo el carrito con un objeto que tiene la propiedad items, que es un array vacio
+// Inicializo el carrito con un objeto que tiene la propiedad items,
 let cart = {
     items: [],
 };
-//Console log del estado inicial del carrito
+//Console log 
 console.log('Carrito inicializado', cart);
 
 
@@ -991,7 +991,7 @@ async function getProductos() {
     //Hacemos fetch a la pagina que tiene el json
     const productos = await fetch('https://api.npoint.io/1564735a417761fa8283').then(res => res.json());
 
-    // Al array de productos ejecutamos forEach (por cada uno) prod es cada producto del array
+    // Al array de productos ejecutamos forEach (por cada uno) 
     productos.forEach(prod => {
         //Creamos constante producto que es un div
         const producto = document.createElement('div');
@@ -1072,7 +1072,7 @@ async function getProductos() {
         //A nuestro div de productos que encapsula TODOS los productos le agregamos el producto creado
         divProductos.appendChild(producto);
 
-        //Toda esta logica se realiza por cada producto del array haciendo que se pinte en el HTML
+        
     })
 
 }
@@ -1081,3 +1081,23 @@ async function getProductos() {
 //Ejecutamos 
 getProductos()
 
+
+
+
+
+//////////////////////////
+
+const contenedorProductos = document.getElementById('contenedor-productos');
+
+productos.forEach((producto)=>{
+  const div = document.createElement('div')
+  div.classList.add('productos')
+  div.innerHTML = `
+      <img src="${producto.img}" class="card-img-top" alt="${productos.name}">
+          <h5 class="card-title">${producto.nombre} </h5>
+          <p class="card-text">Nombre ${producto.nombre} </p>
+          <p class="card-text">Precio: ${producto.precio} </p>
+          <button id="agregar${producto.id}" class="boton-agregar">Agregar <i>  ${character.actor} </button>
+      `;
+contenedorProductos
+})
