@@ -350,7 +350,9 @@ ul {
     flex-direction: column;
     align-items: center;
 }
-
+.productoClase {
+    font-weight: bold;
+}
 
   /* medias querys */
   @media (max-width:410px) {

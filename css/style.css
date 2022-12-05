@@ -642,6 +642,9 @@ div .negrita {
 
 div .italica {
   font-style: italic; }
+  .productoClase {
+    font-weight: bold;
+}
 
 /* medias querys */
 @media (max-width: 410px) {
