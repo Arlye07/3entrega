@@ -963,6 +963,11 @@ function crearHtml(arr) {
 
 ////////////////////
 
+
+
+
+
+
 ////////////////////////////////////////////
 const divProductos = document.getElementById("productos");
 
@@ -973,7 +978,7 @@ let cart = {
 console.log("Carrito inicializado", cart);
 
 async function getProductos() {
-  const productos = await fetch('https://api.npoint.io/1c01982519be34f2cd5e').then(res => res.json());
+  const productos = await fetch('https://api.npoint.io/5de3be2617da978ed281/productos/').then(res => res.json());
   //const productos = await fetch('https://api.npoint.io/1c01982519be34f2cd5e').then(res => res.json());
   //const productos = await fetch('https://api.npoint.io/51afc3f3c79d952e78e5').then(res => res.json());
   //https://www.npoint.io/docs/24ca3428992e2b54ce76
@@ -990,8 +995,8 @@ async function getProductos() {
 
     //imagen
     const imagenElement = document.createElement("img");
-    imagenElement.setAttribute("src", prod.image);
-    
+    imagenElement.setAttribute("src", prod.image); 
+    imagenElement.setAttribute("class", "products");
     //texto a cada uno
     botonAgregarCarrito.innerText = "Agregar";
     botonBorrarDelCarrito.innerText = "Quitar";
@@ -1092,6 +1097,8 @@ finishPurchase.addEventListener('click', function(){
 })
 //Ejecutamos
 getProductos();
+
+
 
 
 
