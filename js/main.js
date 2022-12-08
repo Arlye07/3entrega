@@ -967,7 +967,6 @@ function crearHtml(arr) {
 
 
 
-
 ////////////////////////////////////////////
 const divProductos = document.getElementById("productos");
 
@@ -987,7 +986,8 @@ async function getProductos() {
     const producto = document.createElement("div");
 
     producto.setAttribute("class", "productoClase");
-
+ 
+    
     const botonAgregarCarrito = document.createElement("button");
     const botonBorrarDelCarrito = document.createElement("button");
     //const botonFinDelCarrito = document.createElement('button');
@@ -1022,6 +1022,8 @@ async function getProductos() {
     //Al boton agregar carrito le colocamos un escucha
     botonAgregarCarrito.addEventListener("click", () => {
       cart.items.push(prod.nombre);
+      //cart.amount += (prod.amount);
+    
       swal({
         title: "Agregaste al carrito",
         text: prod.nombre,
@@ -1037,6 +1039,7 @@ async function getProductos() {
       cart.items = cart.items.filter(function (p) {
         return p !== event.target.value;
       });
+      //cart.amount -= prod.amount
       //Lanzamos sweet alert
       swal({
         title: "Borraste del carrito",
