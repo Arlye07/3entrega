@@ -633,12 +633,19 @@ body p {
 .strong p .a {
   text-decoration: none;
   color: #3a0237; }
-.producto{
+.productoClase{
   max-width: 20%;
-  padding: 10px;
+  padding: 8px;
   margin: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   box-shadow: 2px 6px 3px 3 px rgba(250, 71, 241, 0.329);
+  border: 3px solid;
+  border-color: #3a0237;
+  background-color: rgba(248, 134, 233, 0.704);
+  border-radius: 5%;
+  width: justify;
+  font-size: 20px;
+  display: inline-block;
 }
 div .fondoDos {
   background-color: rgba(219, 157, 214, 0.623); }
@@ -648,9 +655,7 @@ div .negrita {
 
 div .italica {
   font-style: italic; }
-  .productoClase {
-    font-weight: bold;
-}
+
 
 /* medias querys */
 @media (max-width: 410px) {

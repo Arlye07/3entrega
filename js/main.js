@@ -1,12 +1,6 @@
 //entrega n:2
 //login
 
-//const { http } = require("npmlog");
-
-//const { check } = require("yargs");
-
-//const { isModuleNamespaceObject } = require("util/types");
-
 //let intentos=3;
 //let palabraClave = "JesusCristo";
 //for (let i = 1; i<=intentos; i++ ){
@@ -50,32 +44,32 @@ const practicas = [
   { id: 9, nombre: "masoterapia", precio: 2000 },
 ];
 const productos = [
-  { id: 1, nombre: "fine , beauty", precio: 7000 },
-  { id: 2, nombre: "fine, power", precio: 8000 },
-  { id: 3, nombre: "lidherma, mascara", precio: 1500 },
-  { id: 4, nombre: "lidherma, texture", precio: 1500 },
-  { id: 5, nombre: "lidherma, consealer", precio: 1500 },
-  { id: 6, nombre: "lidherma, cerum consealer full", precio: 1500 },
-  { id: 7, nombre: "lidherma, treatment oil", precio: 1800 },
-  { id: 8, nombre: "lidherma, skinBooster reparador", precio: 2200 },
-  { id: 9, nombre: "lidherma, biosmotic waterbooster", precio: 2000 },
-  { id: 10, nombre: "lidherma, lips Care 3D", precio: 2000 },
-  { id: 11, nombre: "lidherma, Lumi Prevent locion", precio: 2000 },
-  { id: 12, nombre: "lidherma, ultra retinol", precio: 2000 },
-  { id: 13, nombre: "lidherma, sense control", precio: 2000 },
-  { id: 14, nombre: "lidherma, anti age factor", precio: 3000 },
-  { id: 14, nombre: "lidherma, cell active", precio: 2000 },
-  { id: 16, nombre: "kamikaze, limpiador facial", precio: 800 },
-  { id: 17, nombre: "kamikaze, Llcero", precio: 900 },
-  { id: 18, nombre: "kamikaze, cielo", precio: 2200 },
-  { id: 19, nombre: "kamikaze, agua termal", precio: 1500 },
-  { id: 20, nombre: "Biobellus, jojoba", precio: 1500 },
-  { id: 21, nombre: "Biobellus, suero", precio: 1200 },
-  { id: 22, nombre: "Biobellus, gel", precio: 2200 },
-  { id: 23, nombre: "Biobellus, skin cell", precio: 3200 },
-  { id: 24, nombre: "Biobellus, emulsion limpiadora pepino", precio: 1200 },
-  { id: 25, nombre: "Biobellus, facila relax", precio: 1200 },
-  { id: 26, nombre: "Biobellus, suero", precio: 1200 },
+  { id: 1, marca: "fine ", nombre: "beauty", precio: 7000 },
+  { id: 2, marca: "fine ", nombre: "power", precio: 8000 },
+  { id: 3, marca: "lidherma", nombre: "mascara", precio: 1500 },
+  { id: 4, marca: "lidherma", nombre: "texture", precio: 1500 },
+  { id: 5, marca: "lidherma", nombre: "consealer", precio: 1500 },
+  { id: 6, marca: "lidherma", nombre: "cerum consealer", precio: 1500 },
+  { id: 7, marca: "lidherma", nombre: "treatment oil", precio: 1800 },
+  { id: 8, marca: "lidherma", nombre: "skinBooster", precio: 2200 },
+  { id: 9, marca: "lidherma", nombre: "biosmotic", precio: 2000 },
+  { id: 10, marca: "lidherma", nombre: "lips Care 3D", precio: 2000 },
+  { id: 11, marca: "lidherma", nombre: "Lumi ", precio: 2000 },
+  { id: 12, marca: "lidherma", nombre: "ultra retinol", precio: 2000 },
+  { id: 13, marca: "lidherma", nombre: "sense control", precio: 2000 },
+  { id: 14, marca: "lidherma", nombre: "anti age factor", precio: 3000 },
+  { id: 14, marca: "lidherma", nombre: "cell active", precio: 2000 },
+  { id: 16, marca: "kamikaze", nombre: "limpiador facial", precio: 800 },
+  { id: 17, marca: "kamikaze", nombre: "Lucero", precio: 900 },
+  { id: 18, marca: "kamikaze", nombre: "cielo", precio: 2200 },
+  { id: 19, marca: "kamikaze", nombre: "agua termal", precio: 1500 },
+  { id: 20, marca: "Biobellus", nombre: "jojoba", precio: 1500 },
+  { id: 21, marca: "Biobellus", nombre: "suero", precio: 1200 },
+  { id: 22, marca: "Biobellus", nombre: "gel", precio: 2200 },
+  { id: 23, marca: "Biobellus", nombre: "skin cell", precio: 3200 },
+  { id: 24, marca: "Biobellus", nombre: "emulsion ", precio: 1200 },
+  { id: 25, marca: "Biobellus", nombre: "facila relax", precio: 1200 },
+  { id: 26, marca: "Biobellus", nombre: "suero", precio: 1200 },
 ];
 
 // let PIN="0000";
@@ -337,7 +331,7 @@ function limpiarCampos() {
 //   precio.value,
 //   img.value,
 // );
-         //sweetalert
+//sweetalert
 // cargarInventario(local, nuevolibro);
 // limpiarCampos();
 // guardarLS(local);
@@ -352,7 +346,7 @@ function limpiarCampos() {
 // Toastify({
 //   Text: "libro guardado",
 //   duration: 3000,
-//   gravity:"top", 
+//   gravity:"top",
 //   position: "left",
 //   stopOnFucos: true,
 //   style:{
@@ -597,9 +591,13 @@ btnBuscar.addEventListener("click", () => {
 //evento input
 const input = document.querySelectorAll("input");
 console.log(input);
+// const button = document.querySelectorAll("button");
+// console.log(button);
 
 const select = document.querySelector('select[name="talles"]');
 console.log(select);
+// const button = document.querySelectorAll("button");
+// console.log(button);
 
 //change
 select.addEventListener("change", () => {
@@ -768,14 +766,10 @@ const radio = document.querySelectorAll('input[typer="radio"]');
 //     `
 //     divProductos.appendChild(div)
 //    })
-    
+
 // const agregarAlCarro = (prodId) =>{
 //   const item = stockProductos.find(  (prod)=> prod.id === prodId )
 // }
-
-
-
-
 
 //ASYNC AWAIT
 //  async function fetchProd() {
@@ -785,13 +779,13 @@ const radio = document.querySelectorAll('input[typer="radio"]');
 //    console.log(datos);
 //    renderServicios(datos);
 
-  //fetchProd()
+//fetchProd()
 
-  function crearHtml(arr) {
-    cards.innerHTML = "";
-  }
-  // const card = document.createElement("div");
-  //card.className = "card";
+function crearHtml(arr) {
+  cards.innerHTML = "";
+}
+// const card = document.createElement("div");
+//card.className = "card";
 
 //   for (const item of arr) {
 //     cards.innerHTML = `
@@ -876,90 +870,86 @@ const radio = document.querySelectorAll('input[typer="radio"]');
 // }
 // }
 
+// ejemplo
 
+// const contenedor = document.querySelector('#contenedorTarjeta');
+// const container = document.querySelector('#cardContainer');
+// const selectCasa = document.querySelector('#casa');
+// const btnBusca = document.querySelector('#buscar');
+// const searchBtn = document.querySelector('#search');
 
+// function filtrarCasa(array){
+//   const casa = selectCasa.value;
+//   if(!casa){
+//     return array;
+//   }else{
+//     return array.filter((item)=> item.casaDeHowarts == casa);
+//   }
 
+// }
 
-   // ejemplo
+// function crearHTML(array){
+//   contenedor.innerHTML = '';
+//   container.innerHTML = '';
+//   array.forEach((personaje) => {
+//     const tarjeta = `
+//     <div class="col">
+//     <div class="card h-100">
+//         <img src="${personaje.imagen}" class="card-img-top" alt="${personaje.apodo}">
+//         <div class="card-body">
+//             <h5 class="card-title">${personaje.apodo} </h5>
+//             <p class="card-text">Nombre: ${personaje.personaje} </p>
+//             <p class="card-text">Casa: ${personaje.casaDeHogwarts} </p>
+//             <p class="card-text">Interpretado: ${personaje.interpetrado_por} </p>
+//         </div>
+//     </div>
+// </div>`;
+// contenedor.innerHTML += tarjeta;
+//   })
+// }
 
-const contenedor = document.querySelector('#contenedorTarjeta');
-const container = document.querySelector('#cardContainer');
-const selectCasa = document.querySelector('#casa');
-const btnBusca = document.querySelector('#buscar');
-const searchBtn = document.querySelector('#search');
+// btnBuscar.addEventListener('click',()=>{
+//   fetch('https://api.npoint.io/1564735a417761fa8283')
+//   .then(response => response.json())
+//   .then(data=>{
+//     console.log(data);
+//     const filtrado =  filtrarCasa(data)
+//     crearHTML(filtrado)
+//   } )
 
-function filtrarCasa(array){
-  const casa = selectCasa.value;
-  if(!casa){
-    return array;
-  }else{
-    return array.filter((item)=> item.casaDeHowarts == casa);
-  }
+// })
 
-}
+// function houseFilter(array){
+//   let house = selectCasa.value;
+//   if(!house){
+//     return array;
+//   }else{
+//     return array.filter((item)=> item.house== house);
+//   }
 
-function crearHTML(array){
-  contenedor.innerHTML = '';
-  container.innerHTML = '';
-  array.forEach((personaje) => {
-    const tarjeta = `
-    <div class="col">
-    <div class="card h-100">
-        <img src="${personaje.imagen}" class="card-img-top" alt="${personaje.apodo}">
-        <div class="card-body">
-            <h5 class="card-title">${personaje.apodo} </h5>
-            <p class="card-text">Nombre: ${personaje.personaje} </p>
-            <p class="card-text">Casa: ${personaje.casaDeHogwarts} </p>
-            <p class="card-text">Interpretado: ${personaje.interpetrado_por} </p>
-        </div>
-    </div>
-</div>`;
-contenedor.innerHTML += tarjeta;
-  })
-}
+// }
 
-btnBuscar.addEventListener('click',()=>{
-  fetch('https://api.npoint.io/1564735a417761fa8283')
-  .then(response => response.json())
-  .then(data=>{
-    console.log(data);
-    const filtrado =  filtrarCasa(data)
-    crearHTML(filtrado)
-  } )
-
-})
-
-function houseFilter(array){
-  let house = selectCasa.value;
-  if(!house){
-    return array;
-  }else{
-    return array.filter((item)=> item.house== house);
-  }
-
-}
-
-function createHTML(array){
-  contenedor.innerHTML=''
-  container.innerHTML=''
-  array.forEach((character)=>{
-    const card = `
-    <div class="col">
-    <div class="card h-100">
-        <img src="${character.image}" class="card-img-top" alt="${character.name}">
-        <div class="card-body">
-            <h5 class="card-title">${character.name} </h5>
-            <p class="card-text">Especie: ${character.specie} </p>
-            <p class="card-text">Nacimiento: ${character.dateOfBirth} </p>
-            <p class="card-text">Casa: ${character.house} </p>
-            <p class="card-text">Patronus: ${character.patronus} </p>
-            <p class="card-text">Interpretado: ${character.actor} </p>
-        </div>
-    </div>
-</div>`;
-container.innerHTML +=  card;
-  })
-}
+// function createHTML(array){
+//   contenedor.innerHTML=''
+//   container.innerHTML=''
+//   array.forEach((character)=>{
+//     const card = `
+//     <div class="col">
+//     <div class="card h-100">
+//         <img src="${character.image}" class="card-img-top" alt="${character.name}">
+//         <div class="card-body">
+//             <h5 class="card-title">${character.name} </h5>
+//             <p class="card-text">Especie: ${character.specie} </p>
+//             <p class="card-text">Nacimiento: ${character.dateOfBirth} </p>
+//             <p class="card-text">Casa: ${character.house} </p>
+//             <p class="card-text">Patronus: ${character.patronus} </p>
+//             <p class="card-text">Interpretado: ${character.actor} </p>
+//         </div>
+//     </div>
+// </div>`;
+// container.innerHTML +=  card;
+//   })
+// }
 
 // async function bringData(){
 //   const response = await fetch ('./js/data.json');
@@ -971,133 +961,214 @@ container.innerHTML +=  card;
 //    bringData();
 //  })
 
-
 ////////////////////
 
-// Agarro de mi html (DOM) el div de productos por su id (que esta vacio inicialmente)
-const divProductos = document.getElementById('productos');
+////////////////////////////////////////////
+const divProductos = document.getElementById("productos");
 
-// Inicializo el carrito con un objeto que tiene la propiedad items,
 let cart = {
-    items: [],
+  items: [],
 };
-//Console log 
-console.log('Carrito inicializado', cart);
 
+console.log("Carrito inicializado", cart);
 
-
-//Creamos funcion asincrona que va a traer los productos
 async function getProductos() {
-    //Hacemos fetch a la pagina que tiene el json
-    const productos = await fetch('https://api.npoint.io/1564735a417761fa8283').then(res => res.json());
+  const productos = await fetch('https://api.npoint.io/1c01982519be34f2cd5e').then(res => res.json());
+  //const productos = await fetch('https://api.npoint.io/1c01982519be34f2cd5e').then(res => res.json());
+  //const productos = await fetch('https://api.npoint.io/51afc3f3c79d952e78e5').then(res => res.json());
+  //https://www.npoint.io/docs/24ca3428992e2b54ce76
+  //const productos = await fetch('https://api.npoint.io/24ca3428992e2b54ce76').then(res => res.json());
+  productos.forEach((prod) => {
+    const producto = document.createElement("div");
 
-    // Al array de productos ejecutamos forEach (por cada uno) 
-    productos.forEach(prod => {
-        //Creamos constante producto que es un div
-        const producto = document.createElement('div');
-        //Le colocamos el atributo productoClase para despues darle estilos con css 
-        // Equivale a <div class="productoClase">
-        producto.setAttribute('class', 'productoClase')
-        //Creamos dos botones para agregar y borrar en el carrito
-        const botonAgregarCarrito = document.createElement('button');
-        const botonBorrarDelCarrito = document.createElement('button');
+    producto.setAttribute("class", "productoClase");
 
-        // Le colocamos su texto a cada uno
-        botonAgregarCarrito.innerText = 'Agregar al carrito'
-        botonBorrarDelCarrito.innerText = 'Quitar del carrito'
+    const botonAgregarCarrito = document.createElement("button");
+    const botonBorrarDelCarrito = document.createElement("button");
+    //const botonFinDelCarrito = document.createElement('button');
+    // const inImg = document.createElement('img');
 
-        // Le colocamos el value adentro que va a ser el nombre del producto
-        botonAgregarCarrito.setAttribute('value', prod.nombre);
-        botonBorrarDelCarrito.setAttribute('value', prod.nombre);
-        /*
+    //imagen
+    const imagenElement = document.createElement("img");
+    imagenElement.setAttribute("src", prod.image);
+    
+    //texto a cada uno
+    botonAgregarCarrito.innerText = "Agregar";
+    botonBorrarDelCarrito.innerText = "Quitar";
+    //botonFinDelCarrito.innerText = 'Finalizar'
+    //inImg.innerHTML=` <div class="card fondoDos fon">
+    //<img src="./Imagenes/productos/fine beauty.jpg" alt="">
+    //</div>`
+
+    // Le colocamos el value
+    botonAgregarCarrito.setAttribute("value", prod.nombre);
+    botonBorrarDelCarrito.setAttribute("value", prod.nombre);
+    // botonFinDelCarrito.setAttribute('value', prod.nombre);
+    /*
         Equivalen a
         <button value='nombredeproducto'>Agregar al carrito</button>
         <button value='nombredeproducto'>Quitar del carrito</button>
+        <button value='nombredeproducto'>Gracias por tu compra</button>
         */
 
+        //nuestro div que contiene los botones un texto donde va a ser el nombre y precio
+    producto.innerText = prod.nombre + " precio: " + prod.precio;
 
-        // Aca estamos poniendo en nuestro div que contiene los botones un texto donde va a ser el nombre y precio
-        producto.innerText = prod.nombre + ' precio: ' + prod.precio;
+    //Al boton agregar carrito le colocamos un escucha
+    botonAgregarCarrito.addEventListener("click", () => {
+      cart.items.push(prod.nombre);
+      swal({
+        title: "Agregaste al carrito",
+        text: prod.nombre,
+        icon: "success",
+      });
 
+      console.log("Carrito actual", cart);
 
-        //Al boton agregar carrito le colocamos un escucha evento del 'click'
-        botonAgregarCarrito.addEventListener('click', () => {
-            //Lo primero es pushear al array de items del carrito
-            cart.items.push(prod.nombre)
+      localStorage.setItem("carrito", JSON.stringify(cart));
+    });
 
-            //Lanzamos el alert con Sweet Alert, en su texto colocamos el nombre del producto
-            swal({
-                title: "Agregaste al carrito",
-                text: prod.nombre,
-                icon: "success",
-            });
-            // Hacemos log del estado actual del carrito
-            console.log('Carrito actual', cart);
+    botonBorrarDelCarrito.addEventListener("click", (event) => {
+      cart.items = cart.items.filter(function (p) {
+        return p !== event.target.value;
+      });
+      //Lanzamos sweet alert
+      swal({
+        title: "Borraste del carrito",
+        text: prod.nombre,
+        icon: "warning",
+      });
+      //Log del estado actual del carrito
+      console.log("Carrito actual", cart);
+      //Actualizamos localStorage
+      localStorage.setItem("carrito", JSON.stringify(cart));
+    });
+    //   botonFinDelCarrito.addEventListener('click', (event) => {
 
-            // Por ultimo colocamos en el localStorage el carrito stringificado
-            localStorage.setItem('carrito', JSON.stringify(cart))
-        })
+    //     function recuperarLS(carrito){
+    //       return JSON.parse(localStorage.getItem(carrito))
+    //     }
+    //     //Lanzamos sweet alert
+    //     swal({
+    //         title: "Gracias por tu compra",
+    //         text: "Puede retirar por el local (Catamarca al 1212) ",
+    //         icon: "info",
+    //     });
+    //     //Log del estado actual del carrito
+    //     console.log('Carrito Fin', cart);
+    //     //Actualizamos localStorage
+    //     localStorage.setItem('carrito', JSON.stringify(cart))
+    // })
 
-        //Al boton borrar carrito le colocamos un escucha evento del 'click', por parametro vamos a recibir el evento
-        botonBorrarDelCarrito.addEventListener('click', (event) => {
-            // Reescribimos nuestro array de items en el carrito con un filter para quitar ese producto que tocamos
-            //Investigar addEventListener
-            cart.items = cart.items.filter(function (p) { return p !== event.target.value })
-            //Lanzamos sweet alert
-            swal({
-                title: "Borraste del carrito",
-                text: prod.nombre,
-                icon: "warning",
-            });
-            //Log del estado actual del carrito
-            console.log('Carrito actual', cart);
-            //Actualizamos localStorage
-            localStorage.setItem('carrito', JSON.stringify(cart))
-        })
-
-
-        //A nuestro div que encapsula el producto le agregamos el boton de agregar carrito y borrar del carrito
-        // Investigar appendChild
-        producto.appendChild(botonAgregarCarrito);
-        producto.appendChild(botonBorrarDelCarrito);
-        // Equivale a:
-        /*
+    //A nuestro div que encapsula el producto le agregamos el boton de agregar carrito y borrar del carrito
+    // appendChild
+    producto.appendChild(imagenElement);
+    producto.appendChild(botonAgregarCarrito);
+    producto.appendChild(botonBorrarDelCarrito);
+    //producto.appendChild(botonFinDelCarrito);
+    // Equivale a:
+    /*
         <div>
         fine , beauty precio: 7000
             <button value='fine , beauty'>Agregar al carrito</button>
             <button value='fine , beauty'>Quitar del carrito</button>
+            <button value='fine , beauty'>Finalizar compra</button>
         </div>
         */
-
-        //A nuestro div de productos que encapsula TODOS los productos le agregamos el producto creado
-        divProductos.appendChild(producto);
-
-        
-    })
-
+    divProductos.appendChild(producto);
+    const carrito = [];
+    carrito.length === 0 && console.log("El carrito esta vacio!");
+  })
 }
+const finishPurchase = document.getElementById('finishPurchase');
+finishPurchase.addEventListener('click', function(){
+    console.log('Presionaste el boton finalizar compra');
+    console.log('carrito:', cart);
+    swal({
+        title: "Compra exitosa",
+        text: cart.items.toString(),
+        icon: "success",
+    });
+})
+//Ejecutamos
+getProductos();
 
 
-//Ejecutamos 
-getProductos()
 
 
 
 
+
+
+/////// ///////////////////////////////////////
+//////////////////////////////
+const prodd = document.getElementsByClassName("btn");
+//console.log(prodd[2].innerText);
+
+const botonFinDelCarrito = document.createElement("button");
+botonFinDelCarrito.innerText = "Finalizar";
+
+//$contenedor.appendChild(botonFinDelCarrito);
+
+const btn = document.getElementsByClassName("btn");
+// console.log(btn[2].innerHTML);
+//console.log(btn[3].innerText= "<button>hola</button>");
+// console.log(btn[4].innerHTML);
+// for (const p of btn){
+//   console.log(p.innerHTML);
+// }
+//h2[4].classname
 
 //////////////////////////
 
-const contenedorProductos = document.getElementById('contenedor-productos');
+// const contenedorProductos = document.getElementById('contenedor-productos');
 
-productos.forEach((producto)=>{
-  const div = document.createElement('div')
-  div.classList.add('productos')
-  div.innerHTML = `
-      <img src="${producto.img}" class="card-img-top" alt="${productos.name}">
-          <h5 class="card-title">${producto.nombre} </h5>
-          <p class="card-text">Nombre ${producto.nombre} </p>
-          <p class="card-text">Precio: ${producto.precio} </p>
-          <button id="agregar${producto.id}" class="boton-agregar">Agregar <i>  ${character.actor} </button>
-      `;
-contenedorProductos
-})
+// productos.forEach((producto)=>{
+//   const div = document.createElement('div')
+//   div.classList.add('producto')
+//   div.innerHTML = `
+//       <img src="${producto.img}" class="card-img-top" alt="${productos.name}">
+//           <h5 class="card-title">${producto.nombre} </h5>
+//           <p class="card-text">Nombre ${producto.nombre} </p>
+//           <p class="card-text">Precio: ${producto.precio} </p>
+//           <button id="agregar${producto.id}" class="boton-agregar">Agregar <i>  ${character.actor} </button>
+//       `;
+// contenedorProductos.appendChild(div)
+// })
+
+////////////////////////////////////////////////////
+const nombre1 = document.querySelector("#nombre1"),
+  id = document.querySelector("#id"),
+  precio = document.querySelector("#precio"),
+  img = document.querySelector("#img"),
+  marca = document.querySelector("#marca"),
+  btnRegistrar = document.querySelector("#btnRegistrar");
+const radio1 = document.querySelectorAll('input[type="radio"]');
+
+//Libros ya guardados en inventario
+const inventario = [
+  {
+    nombre: "lidherma",
+    marca: "lidherma",
+    precio: "0",
+    img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.lidherma.com%2Fresources%2Ffrontend%2Fimagenes%2Fmeta_home_new_grande.jpg&imgrefurl=https%3A%2F%2Fwww.lidherma.com%2F&tbnid=owzJMU-BRephVM&vet=12ahUKEwiCluS8h-T7AhWKjZUCHVTwBrcQMygAegUIARC2AQ..i&docid=jISWC_Ov3Cg0CM&w=800&h=800&q=lidherma%20logo&client=firefox-b-d&ved=2ahUKEwiCluS8h-T7AhWKjZUCHVTwBrcQMygAegUIARC2AQ",
+  },
+  {
+    nombre: "biobellus",
+    marca: "biobellus",
+    precio: "0",
+    img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D331599683637575&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FBiobellusSRL%2F&tbnid=mIyED5OsVY7boM&vet=12ahUKEwj-5YC6ieT7AhVggpUCHW4nC3YQMygAegQIARBF..i&docid=PJP5oHNBEBSnZM&w=789&h=788&q=biobellus%20logo&client=firefox-b-d&ved=2ahUKEwj-5YC6ieT7AhVggpUCHW4nC3YQMygAegQIARBF",
+  },
+  {
+    nombre: "kamikaze",
+    marca: "kamikaze",
+    precio: "0",
+    img: "https://www.google.com/imgres?imgurl=http%3A%2F%2Fd3ugyf2ht6aenh.cloudfront.net%2Fstores%2F931%2F176%2Fthemes%2Fcommon%2Flogo-2003513700-1630020896-4727570f03e27fdf4405b255a34bfa971630020896.png%3F0&imgrefurl=https%3A%2F%2Fwww.kamikazecosmetica.com%2F&tbnid=cxn6wECEPqr29M&vet=12ahUKEwjig6SJiuT7AhUzr5UCHbVGDesQMygAegQIARBB..i&docid=Rmopsyyo4BKiYM&w=252&h=278&q=kamikaze%20logo%20belleza&client=firefox-b-d&ved=2ahUKEwjig6SJiuT7AhUzr5UCHbVGDesQMygAegQIARBB",
+  },
+  {
+    nombre: "fine",
+    marca: "fine",
+    precio: "0",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fyomisma.net%2FPromos-en-Combo%2FFINESTRONGX2&psig=AOvVaw2028k07qWZWed-ASk2gu75&ust=1670384791854000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCOi7zKeL5PsCFQAAAAAdAAAAABAD",
+  },
+];
