@@ -583,165 +583,165 @@ function limpiarCampos() {
 // }
 
 //eventos click
-const btnBuscar = document.querySelector("#btnSearch");
-console.log("btnSearch");
-btnBuscar.addEventListener("click", () => {
-  console.log("Hiciste click");
-});
+//const btnBuscar = document.querySelector("#btnSearch");
+//console.log("btnSearch");
+//btnBuscar.addEventListener("click", () => {
+ // console.log("Hiciste click");
+//});
 //evento input
-const input = document.querySelectorAll("input");
-console.log(input);
+//const input = document.querySelectorAll("input");
+//console.log(input);
 // const button = document.querySelectorAll("button");
 // console.log(button);
 
-const select = document.querySelector('select[name="talles"]');
-console.log(select);
+//const select = document.querySelector('select[name="talles"]');
+//console.log(select);
 // const button = document.querySelectorAll("button");
 // console.log(button);
 
 //change
-select.addEventListener("change", () => {
-  let option = select.options[select.selectedIndex].value;
-  console.log(option);
-});
-//funcion de busqueda
-function buscarServicio(arr, filtro) {
-  const encontrado = arr.find((el) => {
-    return el.nombre.includes(filtro);
-  });
-  return encontrado;
-}
-// funcion de busqueda filtro
-function filtarServicio(arr, filtro) {
-  const filtrado = arr.filter((el) => {
-    return el.nombre.includes(filtro);
-  });
-  return filtrado;
-}
-
-//evento input
-inputSearch.addEventListener("input", () => {
-  const encontrado = buscarServicio(practicas, inputSearch.value.toLowerCase());
-  console.log(encontrado);
-});
-//evento input filtro
-// inputSearch.addEventListener('input',()=>{
-//   const filtrado = filtrarServicio(practicas,inputSearch.value.toLowerCase())
-//   console.log(filtrado);
-// })
-
-//formularios
-const formulario = document.querySelector("form");
-
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let formu = e.target;
-  console.log("formulario enviado");
-  console.log(formu);
-  console.log(formu.children[2].value);
-  console.log(formu.children[6].value);
-  console.log(formu.children[9].value);
-  console.log(formu.children[12].value);
-});
-const almacenados = [];
-const formularios = document.querySelector("form"),
-  checkbok = document.getElementById("check"),
-  edad = document.getElementById("edad"),
-  nombre = document.getElementById("nombre"),
-  password = document.getElementById("password"),
-  email = document.getElementById("email"),
-  p = document.querySelector("p");
-
-function guardarLS(valor) {
-  let user = {
-    usuario: nombre.value,
-    edad: edad.value,
-    email: email.value,
-    password: password.value,
-  };
-  if (
-    user.usuario == "" ||
-    user.edad == "" ||
-    user.email == "" ||
-    user.password == ""
-  ) {
-    pract.innerText = "Todos los campos son necesarios";
-    return;
-  } else {
-    if (valor === "sessionStorage") {
-      sessionStorage.setItem("item", JSON.stringify(user));
-    }
-    if (valor === "localStorage") {
-      localStorage.setItem("item", JSON.stringify(user));
-    }
-  }
-  return user;
-}
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (checkbok.checked) {
-    guardarLS("localStorage");
-  } else {
-    guardarLS("sessionStorage");
-  }
-});
-//local storage JSON
-// for (let i = 0; i < localStorage.length; i++) {
-//   let clave = localStorage.key(i);
-//   console.log(clave);
+// select.addEventListener("change", () => {
+//   let option = select.options[select.selectedIndex].value;
+//   console.log(option);
+// });
+// //funcion de busqueda
+// function buscarServicio(arr, filtro) {
+//   const encontrado = arr.find((el) => {
+//     return el.nombre.includes(filtro);
+//   });
+//   return encontrado;
 // }
-const pract = { nombre: "consulta odontologica", precio: 2000 };
-const practLS = JSON.stringify(pract);
-//console.log(practLS);
-
-localStorage.setItem("practicas", practLS);
-const practObj = JSON.parse(localStorage.getItem("practicas"));
-//console.log(practObj);
-
-function filtrar(arr, filtro) {
-  return arr.filter((el) => el.nombre.includes(filtro));
-}
-function encontrar(arr, filtro) {
-  return arr.find((el) => el.nombre.includes(filtro));
-}
-// let filtrado= filtar(practicas, "ma")
-// console.log(filtrado);
-// const encontrados= encontrar(practicas,email.value)
-// almacenado.push(encontrados)
-// localStorage.setItem("filtrado",JSON.stringify(almacenado))
-
-// ///////
-// const span= document.querySelector("span"),
-// guardar = document.querySelector(".btn-success"),
-// mostrar = document.querySelector(".btn-primary"),
-// borrar = document.querySelector(".btn-danger");
-
-// function crearLS(){
-//   const ingreso= document.getElementById("ingreso");
-//   localStorage.setItem("valor",ingreso.value);
+// // funcion de busqueda filtro
+// function filtarServicio(arr, filtro) {
+//   const filtrado = arr.filter((el) => {
+//     return el.nombre.includes(filtro);
+//   });
+//   return filtrado;
 // }
-// function mostrarLS() {
-//   span.innerText = localStorage.getItem("valor");
-// }
-// function borrarLS() {
-//   localStorage.removeItem("valor")
-// }
-// //listeners
-// guardar.addEventListener("click", crearLS);
-// mostrar.addEventListener('click', mostrarLS)
-// borrar.addEventListener('click', borrarLS)
-// //////
 
-//Entrega finallllll
+// //evento input
+// inputSearch.addEventListener("input", () => {
+//   const encontrado = buscarServicio(practicas, inputSearch.value.toLowerCase());
+//   console.log(encontrado);
+// });
+// //evento input filtro
+// // inputSearch.addEventListener('input',()=>{
+// //   const filtrado = filtrarServicio(practicas,inputSearch.value.toLowerCase())
+// //   console.log(filtrado);
+// // })
 
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-const cardProd = document.getElementById("prodCard");
-const verCarrito = document.getElementById("carrito");
-const carritoCard = document.getElementById("carritoCard");
-const cantidadCarrito = document.getElementById("cantidadCarrito");
-const pagarP = document.getElementById("pagar");
-const search = document.getElementById("search");
-const radio = document.querySelectorAll('input[typer="radio"]');
+// //formularios
+// const formulario = document.querySelector("form");
+
+// formulario.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let formu = e.target;
+//   console.log("formulario enviado");
+//   console.log(formu);
+//   console.log(formu.children[2].value);
+//   console.log(formu.children[6].value);
+//   console.log(formu.children[9].value);
+//   console.log(formu.children[12].value);
+// });
+// const almacenados = [];
+// const formularios = document.querySelector("form"),
+//   checkbok = document.getElementById("check"),
+//   edad = document.getElementById("edad"),
+//   nombre = document.getElementById("nombre"),
+//   password = document.getElementById("password"),
+//   email = document.getElementById("email"),
+//   p = document.querySelector("p");
+
+// function guardarLS(valor) {
+//   let user = {
+//     usuario: nombre.value,
+//     edad: edad.value,
+//     email: email.value,
+//     password: password.value,
+//   };
+//   if (
+//     user.usuario == "" ||
+//     user.edad == "" ||
+//     user.email == "" ||
+//     user.password == ""
+//   ) {
+//     pract.innerText = "Todos los campos son necesarios";
+//     return;
+//   } else {
+//     if (valor === "sessionStorage") {
+//       sessionStorage.setItem("item", JSON.stringify(user));
+//     }
+//     if (valor === "localStorage") {
+//       localStorage.setItem("item", JSON.stringify(user));
+//     }
+//   }
+//   return user;
+// }
+// formulario.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   if (checkbok.checked) {
+//     guardarLS("localStorage");
+//   } else {
+//     guardarLS("sessionStorage");
+//   }
+// });
+// //local storage JSON
+// // for (let i = 0; i < localStorage.length; i++) {
+// //   let clave = localStorage.key(i);
+// //   console.log(clave);
+// // }
+// const pract = { nombre: "consulta odontologica", precio: 2000 };
+// const practLS = JSON.stringify(pract);
+// //console.log(practLS);
+
+// localStorage.setItem("practicas", practLS);
+// const practObj = JSON.parse(localStorage.getItem("practicas"));
+// //console.log(practObj);
+
+// function filtrar(arr, filtro) {
+//   return arr.filter((el) => el.nombre.includes(filtro));
+// }
+// function encontrar(arr, filtro) {
+//   return arr.find((el) => el.nombre.includes(filtro));
+// }
+// // let filtrado= filtar(practicas, "ma")
+// // console.log(filtrado);
+// // const encontrados= encontrar(practicas,email.value)
+// // almacenado.push(encontrados)
+// // localStorage.setItem("filtrado",JSON.stringify(almacenado))
+
+// // ///////
+// // const span= document.querySelector("span"),
+// // guardar = document.querySelector(".btn-success"),
+// // mostrar = document.querySelector(".btn-primary"),
+// // borrar = document.querySelector(".btn-danger");
+
+// // function crearLS(){
+// //   const ingreso= document.getElementById("ingreso");
+// //   localStorage.setItem("valor",ingreso.value);
+// // }
+// // function mostrarLS() {
+// //   span.innerText = localStorage.getItem("valor");
+// // }
+// // function borrarLS() {
+// //   localStorage.removeItem("valor")
+// // }
+// // //listeners
+// // guardar.addEventListener("click", crearLS);
+// // mostrar.addEventListener('click', mostrarLS)
+// // borrar.addEventListener('click', borrarLS)
+// // //////
+
+// //Entrega finallllll
+
+// let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+// const cardProd = document.getElementById("prodCard");
+// const verCarrito = document.getElementById("carrito");
+// const carritoCard = document.getElementById("carritoCard");
+// const cantidadCarrito = document.getElementById("cantidadCarrito");
+// const pagarP = document.getElementById("pagar");
+// const search = document.getElementById("search");
+// const radio = document.querySelectorAll('input[typer="radio"]');
 
 //ruta relativa
 // const divProductos= document.getElementById('productos');
