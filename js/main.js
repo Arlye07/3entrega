@@ -1027,6 +1027,7 @@ async function getProductos() {
       swal({
         title: "Agregaste al carrito",
         text: prod.nombre,
+        //precio: prod.precio,
         icon: "success",
       });
 
@@ -1044,6 +1045,7 @@ async function getProductos() {
       swal({
         title: "Borraste del carrito",
         text: prod.nombre,
+       // precio: prod.precio,
         icon: "warning",
       });
       //Log del estado actual del carrito
@@ -1084,8 +1086,8 @@ async function getProductos() {
         </div>
         */
     divProductos.appendChild(producto);
-    const carrito = [];
-    carrito.length === 0 && console.log("El carrito esta vacio!");
+    //const carrito = [];
+    //carrito.length === 0 && console.log("El carrito esta vacio!");
   })
 }
 const finishPurchase = document.getElementById('finishPurchase');
@@ -1095,6 +1097,7 @@ finishPurchase.addEventListener('click', function(){
     swal({
         title: "Compra exitosa",
         text: cart.items.toString(),
+       // precio: prod.precio,
         icon: "success",
     });
 })
