@@ -23,9 +23,9 @@ ODONTOLOGIA: ODONTOLOGIA | OBRAS PLANES
 contacto: CONTACTO | INFO
 
 4- Coloque el encabezado descriptivo de cada html indicando pagina anterior y en la que se esta ubicado en:
-index: home
+index: home/inicio
 STAFF: STAFF
 SERVICIOS: SERVICIOS
 PRODUCTOS: PRODUCTOS
 ODONTOLOGIA: ODONTOLOGIA
-contacto: contacto
+contacto: contacto/turno
