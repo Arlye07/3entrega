@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: rgb(88, 3, 84);
+    border: rgba(88, 3, 84, 0.295) 12px;
+    padding: 13px 45px;
+    margin: 5px 5px 5px 5px;
+    background-color: rgba(225, 134, 248, 0.548);
+    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: 25px;
+    position: sticky;
+    z-index: 2;
+    width: justify;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{ color: rgb(62, 0, 119);
+    border: rgb(58, 2, 55) 4px solid;
+    background-color: rgba(225, 134, 248, 0.507);
+    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: none;
+    text-align: center;
+    width: justify;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+h3{
+    background-color: rgba(250, 71, 241, 0.329);
+    border: 12px;
+    margin-left: 12px;
+    width: 100%;
+    height: 32px;
+    overflow: center;
+    text-align: center;
+    
+}
+#primeraParte{
+    background-color: rgb(165, 164, 164);
+    border: rgb(90, 1, 90) 4px solid;
+}
+.parrafoRgb{ color: rgb(81, 3, 88);
+    background-color: rgb(165, 164, 164);
+    padding: 12px;
+    display: inline-block
+}
+.parrafoGrande{ font-size: 25px;
+
+} 
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin: 5px;
+    flex-direction: row;
+} 
+.header a:hover, footer a:hover{
+    color:rgb(225, 134, 248);
+    font-weight: bold;
+
+}
+b{ font-size: 32px;
+    width: justify;
+    text-align: center;
+    border: rgb(58, 2, 55) 5px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    line-height: 1.5;
+}
+ul{
+    background-color: none;
+    font-size: 28px; 
+    line-height: 1.5;
+}
+ol{
+    text-align: center;
+
+}
+li{
+    background-color:rgba(255, 255, 255, 0.658);
+    font-size: 30px;
+    display:inline-block;
+    text-align: center;
+    width: justify;
+}
+section{
+    text-align: center;
+    width: 100%;
+}
+main{
+    background-color:rgba(161, 108, 172, 0.507);
+}
+
+.img{
+    text-align: center;
+    width: justify;
+    height: justify;
+    border-radius: 5%;
+}
+.imagen1{
+    text-align: center;
+    border-radius: 9%;
+
+}
+.fotos{
+    background-color: rgb(165, 164, 164);
+    border-radius: 9%;
+    padding: 2px;
+    margin: 2px;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(8, 8, 8);
+    background-color: rgba(165, 164, 164, 0.719);
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-radius: 9px;
+    background-image: url(https://th.bing.com/th/id/R.9743e74f858ff8859e46109c10f1e443?rik=srSyp6s9DaakEg&riu=http%3a%2f%2falfonsomartinjimenez.blogs.uva.es%2ffiles%2f2018%2f10%2ftexcal-liso_gris-t15.jpg&ehk=wDKAfnB%2fmyhK%2bNnfr6jRONFTMIXtd5y3H5TA6rgaQI4%3d&risl=&pid=ImgRaw&r=0);
+    
+}
+.productoClase{
+    max-width: 20%;
+    padding: 8px;
+    margin: 10px;
+    margin-bottom: 12px;
+    box-shadow: 2px 6px 3px 3 px rgba(250, 71, 241, 0.329);
+    border: 3px solid;
+    border-color: #3a0237;
+    background-color: rgba(225, 134, 248, 0.548);
+    border-radius: 5%;
+    width: justify;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+
+footer{
+    color: rgb(83, 2, 83);
+    text-align: center;
+    background-color: rgb(212, 212, 212);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    
+}
+.italica{
+    font-style: italic;
+}
+.negrita{
+    font-weight: 700;
+            }
+ .negritaN{
+                color: black;
+            }   
+.negritaV{
+                color: purple;
+            }         
+.centro{
+        width: 100%;
+        text-align: center;
+    }
+p{
+    line-height: 1.8;;
+    width: justify;
+}
+a{
+    text-decoration: none;
+    color: rgb(58, 2, 55);
+}
+.nos{ display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#primeraParte{
+    background-image: url('https://pm1.narvii.com/6989/08eadd1318db53401450f030eb1e78dad1a462e7r1-720-1280v2_hq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    border-radius: 5%;
+}
+.wapp{
+    background-color: green;
+    color: whitesmoke;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 5%;
+    position: fixed;
+    top: 420px;
+    left: 1080px;
+    
+}
+.barra{top: 0%;
+    position: sticky;
+    z-index: 2;
+}
+.barranav{top: 0px;
+    position: sticky;
+    z-index: 3;
+    border: 2px solid;
+    border-color: rgb(58, 2, 55);
+    background-color: rgba(128, 128, 128, 0.397);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 28px;
+}
+.contac{
+    margin: 2px;
+    border: 2px solid;
+    padding: 2px;
+    font-size: 32px;
+
+}
+/* menu desplegable */
+ul {
+    list-style: none;
+    font-size:0 /*inline-block*/
+ }
+ li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 15px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+  .wap{
+    display: inline-block;
+    height: 45px;
+    margin: 15 10 15 10;
+    padding: 15 10 15 10;
+    color: blueviolet;
+    position:relative;
+    border: 15 20 15 20;
+    text-align: center;
+
+  }
+ .lista{ border: 2px;
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .lista2{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .items{
+    font-size: 20px;
+  }
+  .pad{
+    margin: 0 8px;
+  }
+  .alto{height: 220px;}
+  .nu{
+    background-color: none;
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+  }
+  .TIT{
+    margin: 2PX;
+    padding: 2PX;
+    border: 2px;
+    background-color: rgb(115, 36, 189);
+    text-align: center;
+
+  }
+  .tablap{ border: rgb(58, 2, 55) 2px;
+    margin: rgb(58, 2, 55) 2px;
+    padding: rgb(58, 2, 55) 2px;
+    text-align: center;
+    font-size: center;
+    display: inline-block;
+  }
+.fix {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+  }
+  .cua{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .ca{
+    display: grid;
+    justify-content: center;
+  }
+  /* galeria */
+  .grid-container{
+    max-width: 850px;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap:15px;
+  }
+  .grid-container img{
+    height: 205px;
+
+  }
+  .grid-container div{
+    width: 350px;
+    overflow: hidden;
+  }
+  .buscadora{
+    margin-top: 5px;
+  }
+  .fondocolor{
+    background-color: rgb(175, 145, 204) !important;
+}
+.seccion{
+    width: 100%;
+    min-height: 500px;
+    padding: 2rem;
+}
+.fondoDos{
+    background-color: rgba(219, 157, 214, 0.623);
+}
+.aei{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productoClase {
+    font-weight: bold;
+}
+
+  /* medias querys */
+  @media (max-width:410px) {
+    .grid-container{grid-template-columns: 1fr;
+    }
+    .parrafoGrande{font-size: 10px;}
+    .p{font-size: 10px;}
+    .div{font-size: 10px;}
+    .p1{ font-size: 9px;}
+    .p2{ font-size: 11px;}
+    
+  }
+@media (max-width: 680px){
+    .header{
+        flex-direction: column;
+    }
+    .img img{width: 150px;}
+    .main .h1 .h2 .h3 .li .p .a{
+        font-size: 12px;
+    }
+    .section .ol{
+        font-size: 10px;
+        width: 182px;
+    }
+    .section .p{
+        width: 182px;
+    }
+    .grid-container{grid-template-columns: 1fr;
+    }
+    .ul {font-size: 10px;}
+    .p{ font-size: 10px;}
+    .div{font-size: 12px;}
+    .p1{font-size: 11px;}
+    .p2{ font-size: 16px;}
+    .ifra{ width: 290px;}
+    .banner{
+        font-size: 46px;
+    }
+ 
+    
+}
+@media (max-width: 790px){
+    .p{font-size: 11px;}
+    .t1 {font-size: 18px;}
+    .t2 {font-size: 17px;}
+    .bn {font-size: 11px;}
+    .grid-container{ grid-template-columns: 1fr;}
+    .img{width: 345px;}
+}
+@media(min-width: 800px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner{
+        font-size: 65px;
+    }
+}
